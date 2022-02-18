@@ -2,7 +2,7 @@
 Set-ExecutionPolicy Unrestricted -Scope LocalMachine -Force -ErrorAction Ignore
 
 # Set administrator password
-net user Administrator SuperS3cr3t!!!!
+net user Administrator test!!!!
 wmic useraccount where "name='Administrator'" set PasswordExpires=FALSE
 
 # First, make sure WinRM can't be connected to
